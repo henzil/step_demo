@@ -51,7 +51,9 @@ ul li a{
   -moz-transition:-moz-transform .15s linear;
   -o-transition:-o-transform .15s linear;
   -webkit-transition:0.5s ease-in;
-  -ms-transition: 0.5s ease-in;
+/*   -ms-transition: 0.5s ease-in; */
+  -ms-transition-duration: 0.5s;
+  -ms-transition-timing-function: ease-in;
 }
 ul li h2{
   font-size:140%;
@@ -106,8 +108,9 @@ ul li a:hover,ul li a:focus{
   -moz-transform: scale(1.25);
   -o-transform: scale(1.25);
   -ms-transform: scale(1.25);
-  
-  -ms-transition: 0.5s ease-in;
+  -ms-transition-duration: 0.5s;
+  -ms-transition-timing-function: ease-in;
+/*   -ms-transition: 0.5s ease-in; */
   position:relative;
   z-index:5;
 }
